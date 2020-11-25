@@ -8,10 +8,13 @@
       width: 90%;
     }
     .main-button {
-      width: 40%;
+      margin: 20px auto;
+      width: 90%;
+      height: 40px;
       background: #52976b;
+      display: block;
     }
-    .main-image {
+    .main-image-container {
       margin: 0 auto;
       width: 90%;
     }
@@ -20,11 +23,13 @@
 
 <body>
   <div class="main-container">
-    <img class="main-image" src='{{ "/images/index-mid.jpg" | relative_url }}'>
+    <div class="main-image-container" >
+      <img src='{{ "/images/index-mid.jpg" | relative_url }}'>
+    </div>
     <div>
-      <button class="main-button">전체보기</button>
-      <button class="main-button">오시는길</button>
-      <button class="main-button">포토갤러리</button>
+      <button class="main-button" onClick="location.href='/main.html'">전체보기</button>
+      <button class="main-button" onClick="location.href='map.html'">오시는길</button>
+      <button class="main-button" onClick="location.href='./photo.html'">포토갤러리</button>
     </div>
   </div>
 
