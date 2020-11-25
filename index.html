@@ -4,7 +4,14 @@
 <html>
 <head>
   <style>
-    #item {
+    .main-container {
+      width: 90%;
+    }
+    .main-button {
+      width: 40%;
+      background: #52976b;
+    }
+    .main-image {
       margin: 0 auto;
       width: 90%;
     }
@@ -12,8 +19,15 @@
 </head>
 
 <body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
-    <img id='item' src='{{ "/images/index-mid.jpg" | relative_url }}'>
+  <div class="main-container">
+    <img class="main-image" src='{{ "/images/index-mid.jpg" | relative_url }}'>
+    <div>
+      <button class="main-button">전체보기</button>
+      <button class="main-button">오시는길</button>
+      <button class="main-button">포토갤러리</button>
+    </div>
+  </div>
+
+    
 </body>
 </html>
