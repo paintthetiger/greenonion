@@ -8,10 +8,11 @@
     }
     .index-button {
       margin: 20px auto;
-      width: 90%;
-      height: 40px;
-      background: #52976b;
+      width: 100%;
+      height: 20%;
+      background: #99806C;
       display: block;
+      border-radius: 4px;
     }
     .index-image-container {
       margin: 0 auto;
@@ -26,11 +27,23 @@
 <body>
   <div class="main-container">
     <div class="main-image-container" >
-      <img class="index-image" src='{{ "/images/index-mid.jpg" | relative_url }}'>
+      <img class="index-image" src='{{ "/images/index.jpg" | relative_url }}'>
     <div>
-      <button class="index-button" onClick="location.href='./main'">전체보기</button>
-      <button class="index-button" onClick="location.href='./map'">오시는길</button>
-      <button class="index-button" onClick="location.href='./photo'">포토갤러리</button>
+      <div class="index-button">
+        <a href="./main">
+          전체보기
+        </a>
+      </div>
+      <div class="index-button">
+          <a href="./map">
+            오시는길
+          </a>
+      </div>
+      <div class="index-button">
+        <a href="./photo">
+          포토갤러리
+        </a>
+      </div>
     </div>
     </div>
   </div>
