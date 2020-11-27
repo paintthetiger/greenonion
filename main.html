@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
       @font-face {
         font-family: "nanum";
@@ -264,141 +269,36 @@
           </div>
           <hr />
           <div class="main-block">
-              <span class="main-title" id="gallery">포토갤러리</span>
-              <div id="slider-wrap">
-                  <ul id="slider">
-                      <li>
-                          <div>
-                              <h3>Slide #1</h3>
-                              <span>Sub-title #1</span>
-                          </div>
-                          <img src='{{ "/photos/YHNYE_1.jpeg" | relative_url }}''>
-                      </li>
-              
-                      <li>
-                          <div>
-                              <h3>Slide #2</h3>
-                              <span>Sub-title #2</span>
-                          </div>
-                          <img src='{{ "/photos/YHNYE_2.jpeg" | relative_url }}''>
-                      </li>
-              
-                      <li>
-                          <div>
-                              <h3>Slide #3</h3>
-                              <span>Sub-title #3</span>
-                          </div>
-                          <img src='{{ "/photos/YHNYE_3.jpeg" | relative_url }}''>
-                      </li>
-              
-                      <li>
-                          <div>
-                              <h3>Slide #4</h3>
-                              <span>Sub-title #4</span>
-                          </div>
-                          <img src='{{ "/photos/YHNYE_4.jpeg" | relative_url }}''>
-                      </li>
-              
-                      <li>
-                          <div>
-                              <h3>Slide #5</h3>
-                              <span>Sub-title #5</span>
-                          </div>
-                          <img src='{{ "/photos/YHNYE_5.jpeg" | relative_url }}''>
-                      </li>
-                  </ul>
-              
-                  <div class="slider-btns" id="next"><span>▶</span></div>
-                  <div class="slider-btns" id="previous"><span>◀</span></div>
-              
-                  <div id="slider-pagination-wrap">
-                      <ul>
-                      </ul>
-                  </div>
-              </div>            
+              <span class="main-title" id="gallery">포토갤러리</span>           
           </div>
           <hr />
+          <!-- Swiper -->
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('/photos/YHNYE_1');">Slide 1</div>
+        <div class="swiper-slide" style="background: url('../photos/YHNYE_2');">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <script type="text/javascript">
-      //slide-wrap
-      var slideWrapper = document.getElementById('slider-wrap');
-      //current slideIndexition
-      var slideIndex = 0;
-      //items
-      var slides = document.querySelectorAll('#slider-wrap ul li');
-      //number of slides
-      var totalSlides = slides.length;
-      //get the slide width
-      var sliderWidth = slideWrapper.clientWidth;
-      //set width of items
-      slides.forEach(function (element) {
-          element.style.width = sliderWidth + 'px';
-      })
-      //set width to be 'x' times the number of slides
-      var slider = document.querySelector('#slider-wrap ul#slider');
-      slider.style.width = sliderWidth * totalSlides + 'px';
-
-      // next, prev
-      var nextBtn = document.getElementById('next');
-      var prevBtn = document.getElementById('previous');
-      nextBtn.addEventListener('click', function () {
-          plusSlides(1);
+    </div>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
       });
-      prevBtn.addEventListener('click', function () {
-          plusSlides(-1);
-      });
-
-      // hover
-      slideWrapper.addEventListener('mouseover', function () {
-          this.classList.add('active');
-          clearInterval(autoSlider);
-      });
-      slideWrapper.addEventListener('mouseleave', function () {
-          this.classList.remove('active');
-          autoSlider = setInterval(function () {
-              plusSlides(1);
-          }, 3000);
-      });
-
-
-      function plusSlides(n) {
-          showSlides(slideIndex += n);
-      }
-
-      function currentSlides(n) {
-          showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-          slideIndex = n;
-          if (slideIndex == -1) {
-              slideIndex = totalSlides - 1;
-          } else if (slideIndex === totalSlides) {
-              slideIndex = 0;
-          }
-
-          slider.style.left = -(sliderWidth * slideIndex) + 'px';
-          pagination();
-      }
-
-      //pagination
-      slides.forEach(function () {
-          var li = document.createElement('li');
-          document.querySelector('#slider-pagination-wrap ul').appendChild(li);
-      })
-
-      function pagination() {
-          var dots = document.querySelectorAll('#slider-pagination-wrap ul li');
-          dots.forEach(function (element) {
-              element.classList.remove('active');
-          });
-          dots[slideIndex].classList.add('active');
-      }
-
-      pagination();
-      var autoSlider = setInterval(function () {
-          plusSlides(1);
-      }, 3000);
     </script>
   </body>
 </html>
