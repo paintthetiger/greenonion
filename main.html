@@ -9,9 +9,15 @@
       src: url("./font/BMJUA_otf.otf");
     }
     .main-container {
+      margin: 0 auto;
+      width: 90%;
+      background-color: #99806C;
     }
     .main-block {
 
+    }
+    .main-image {
+      width: 100%;
     }
     h2 {
       font-family: "jua";
@@ -22,29 +28,27 @@
 <body>
   <div class="main-container">
         <div class="main-block">
-          
-          <div>        
-            <a class="index-button-text" href="./main">
-              전체보기
-            </a>
-          </div>
+            <img class="main-image" src='{{ "/images/main-mid.jpg" | relative_url }}'>
         </div>
-        <div class="index-button">
-          <div>
-            <a class="index-button-text" href="./map">
-              오시는 길
-            </a>
-          </div>
+        <div class="main-block">
+            <div class="text-container">
+              <h2>INVITATION</h2>
+
+            </div>
         </div>
-        <div class="index-button">
-          <div>
-            <a class="index-button-text" href="./photo">
-              포토 갤러리
-            </a>
-          </div>
+        <div class="main-block">
+            <h2>주인공을 소개합니다.</h2>
         </div>
-      </div>
-    </div>
+        <div class="main-block">
+            <h2>참석 여부</h2>
+        </div>
+        <div class="main-block">
+            <h2 id="navigation">오시는길</h2>
+        </div>
+        <div class="main-block">
+            <h2 id="gallery">포토갤러리</h2>
+        </div>
+
   </div>
 
     
