@@ -73,144 +73,46 @@
         margin: 0 auto;
       }
 
-      /* For slider */
-      /*GLOBALS*/
-      * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      #slider-wrap {
-        width: 100%;
-        height: 400px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      #slider-wrap ul#slider {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      #slider-wrap ul#slider li {
-        float: left;
-        position: relative;
+      .swiper-container {
         width: 600px;
-        height: 400px;
+        height: 300px;
       }
 
-      #slider-wrap ul#slider li>div {
-        position: absolute;
-        top: 20px;
-        left: 35px;
-      }
-
-      #slider-wrap ul#slider li>div h3 {
-        font-size: 36px;
-        text-transform: uppercase;
-      }
-
-      #slider-wrap ul#slider li>div span {
-        font-size: 21px;
-      }
-
-      #slider-wrap ul#slider li img {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-
-      /*btns*/
-      .slider-btns {
-        position: absolute;
-        width: 50px;
-        height: 60px;
-        top: 50%;
-        margin-top: -25px;
-        line-height: 57px;
-        text-align: center;
-        cursor: pointer;
-        background: rgba(0, 0, 0, 0.1);
-        z-index: 100;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -ms-user-select: none;
-        -webkit-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-      }
-
-      .slider-btns:hover {
-        background: rgba(0, 0, 0, 0.3);
-      }
-
-      #next {
-        right: -50px;
-        border-radius: 7px 0px 0px 7px;
-        color: #eee;
-      }
-
-      #previous {
-        left: -50px;
-        border-radius: 0px 7px 7px 7px;
-        color: #eee;
-      }
-
-      #slider-wrap.active #next {
-        right: 0px;
-      }
-
-      #slider-wrap.active #previous {
-        left: 0px;
-      }
-
-      /*bar*/
-      #slider-pagination-wrap {
-        min-width: 20px;
-        margin-top: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 15px;
-        position: relative;
-        text-align: center;
-      }
-
-      #slider-pagination-wrap ul {
-        width: 100%;
-      }
-
-      #slider-pagination-wrap ul li {
-        margin: 0 4px;
-        display: inline-block;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background: #fff;
-        opacity: 0.5;
-        position: relative;
-        top: 0;
-      }
-
-      #slider-pagination-wrap ul li.active {
-        width: 12px;
-        height: 12px;
-        top: 3px;
-        opacity: 1;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
-        box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
-      }
-
-      /*ANIMATION*/
-      #slider-wrap ul,
-      #slider-pagination-wrap ul li {
-        -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-        -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-        transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-      }
+       /* The Modal (background) */
+       .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+    
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* Could be more or less, depending on screen size */                          
+        }
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
     </style>
   </head>
@@ -272,24 +174,49 @@
               <span class="main-title" id="gallery">포토갤러리</span>           
           </div>
           <hr />
-          <!-- Swiper -->
-  <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background: url('/photos/YHNYE_1');">Slide 1</div>
-        <div class="swiper-slide" style="background: url('../photos/YHNYE_2');">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-    </div>
+              <!-- Trigger/Open The Modal -->
+          <button id="myBtn">Open Modal</button>
+      
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+      
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>                                                               
+              <p>Some text in the Modal..</p>
+              <!-- Swiper -->
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="main-image" src='{{ "/photos/YHNYE_1.jpeg" | relative_url }}'>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="main-image" src='{{ "/photos/YHNYE_2.jpeg" | relative_url }}'>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="main-image" src='{{ "/photos/YHNYE_3.jpeg" | relative_url }}'>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="main-image" src='{{ "/photos/YHNYE_4.jpeg" | relative_url }}'>
+                    </div>
+                    <div class="swiper-slide">                 
+                      <img class="main-image" src='{{ "/photos/YHNYE_5.jpeg" | relative_url }}'>
+                    </div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+                </div>
+            </div>
+      
+          </div>
+
+
     <script>
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
@@ -299,6 +226,31 @@
           clickable: true,
         },
       });
+      // Get the modal
+      var modal = document.getElementById('myModal');
+ 
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];                                          
+
+      // When the user clicks on the button, open the modal 
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
     </script>
   </body>
 </html>
