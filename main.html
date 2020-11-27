@@ -11,11 +11,9 @@
     p {
       font-family: "nanum";
     }
-
     span {
       font-family: "nanum";
     }
-
     .main-container {
       margin: 0 auto;
       width: 90%;
@@ -46,6 +44,18 @@
       text-align: left;
       display: block;
       color: #99806C;
+    }
+    .main-button {
+      margin: 20px auto;
+      width: 100%;
+      height: 2em;
+      background: #99806C;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      border: transparent;
+      font-size: 3.5em;
     }
     .icon-container {
       margin: 60px auto;
@@ -94,13 +104,19 @@
         </div>
         <hr />
         <div class="main-block">
-            <span class="main-title">참석 여부</v>
+            <div class="text-container">
+                <span class="main-title">참석 여부</span>
+                <p class="main-content">
+                  코로나19 예방을 위한 방역 작업을 위해 참석 인원을 미리 파악하고 있습니다. 아래 버튼을 눌러서 참여여부를 체크해 주시면 감사하겠습니다.
+                </p>
+                <a class="main-button" href="https://forms.gle/MuBHj4ESPfW4NCuj9">참석 여부 표시하기</a>
+              </div>
         </div>
         <hr />
         <div class="main-block">
             <span class="main-title" id="navigation">오시는길</span>
             <img class="main-image" src='{{ "/images/map.png" | relative_url }}'>
-            <span class="bold-content">서울 마포구 마포대로 92 효성해링턴스퀘어 B동 7층</span>
+            <span class="medium-bold-content">서울 마포구 마포대로 92 효성해링턴스퀘어 B동 7층</span>
             <div class="icon-container">
               <img class="main-icon" src='{{ "/images/icon_tmap.jpg" | relative_url }}'>
               <img class="main-icon" src='{{ "/images/icon_navermap.jpg" | relative_url }}'>
