@@ -13,9 +13,8 @@
       width: 90%;
     }
     .main-block {
-      border-bottom: 1vh;
-      border-bottom-color: black;
       text-align: center;
+      margin: 100px auto;
     }
     .main-image {
       width: 100%;
@@ -23,8 +22,10 @@
     .main-title {
       font-family: "jua";
       font-size: 4em;
+      margin-bottom: 60px;
+      display: block;
     }
-    .main-context {
+    .main-content {
       font-family: "jua";
       font-size: 1.6em;
     }
@@ -36,6 +37,7 @@
         <div class="main-block">
             <img class="main-image" src='{{ "/images/main-mid.jpg" | relative_url }}'>
         </div>
+        <hr />
         <div class="main-block">
             <div class="text-container">
               <span class="main-title">INVITATION</span>
@@ -51,18 +53,23 @@
               </p>
             </div>
         </div>
+        <hr />
         <div class="main-block">
             <span class="main-title">주인공을 소개합니다.</span>
         </div>
+        <hr />
         <div class="main-block">
             <span class="main-title">참석 여부</v>
         </div>
+        <hr />
         <div class="main-block">
             <span class="main-title" id="navigation">오시는길</span>
         </div>
+        <hr />
         <div class="main-block">
             <span class="main-title" id="gallery">포토갤러리</span>
         </div>
+        <hr />
   </div>
 </body>
 </html>
