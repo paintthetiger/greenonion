@@ -81,6 +81,11 @@
         border-radius: 40px;
         margin: 0 auto;
       }
+      .profile {
+        width: 100%;
+        height: 70%;
+        margin: 12px;
+      }
       .photo-gallery-photo {
         width: 30%;
         height: 30%;
@@ -143,10 +148,11 @@
           <hr />
           <div class="main-block">
               <span class="main-title">주인공을 소개합니디</span>
-              <img class="main-image" src='{{ "/images/main-mid.jpg" | relative_url }}'>
+              <img class="main-image" src='{{ "/images/intro.jpg" | relative_url }}'>
               <div style="display: flex;">
                   <div>
-                      <img class="main-icon" src='{{ "/images/yh.jpg" | relative_url }}'>
+                      <img class="profile" src='{{ "/images/yh.jpg" | relative_url }}'>
+                      <span class="medium-bold-content">신랑 김용호</span>
                       <div class="icon-container">
                           <img class="main-icon" src='{{ "/images/icon_tmap.jpg" | relative_url }}'>
                           <img class="main-icon" src='{{ "/images/icon_navermap.jpg" | relative_url }}'>
@@ -154,7 +160,8 @@
                       </div>
                   </div>
                   <div>
-                      <img class="main-icon" src='{{ "/images/ye.jpg" | relative_url }}'>
+                      <img class="profile" src='{{ "/images/ye.jpg" | relative_url }}'>
+                      <span class="medium-bold-content">신부 최예은</span>
                       <div class="icon-container">
                           <img class="main-icon" src='{{ "/images/icon_tmap.jpg" | relative_url }}'>
                           <img class="main-icon" src='{{ "/images/icon_navermap.jpg" | relative_url }}'>
@@ -188,19 +195,19 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="main-image" src='{{ "/photos/YHNYE_1.jpeg" | relative_url }}'>
+                <img class="main-image" src='{{ "/photos/YHNYE_1.jpg" | relative_url }}'>
               </div>
               <div class="swiper-slide">
-                <img class="main-image" src='{{ "/photos/YHNYE_2.jpeg" | relative_url }}'>
+                <img class="main-image" src='{{ "/photos/YHNYE_2.jpg" | relative_url }}'>
               </div>
               <div class="swiper-slide">
-                <img class="main-image" src='{{ "/photos/YHNYE_3.jpeg" | relative_url }}'>
+                <img class="main-image" src='{{ "/photos/YHNYE_3.jpg" | relative_url }}'>
               </div>
               <div class="swiper-slide">
-                <img class="main-image" src='{{ "/photos/YHNYE_4.jpeg" | relative_url }}'>
+                <img class="main-image" src='{{ "/photos/YHNYE_4.jpg" | relative_url }}'>
               </div>
               <div class="swiper-slide">                 
-                <img class="main-image" src='{{ "/photos/YHNYE_5.jpeg" | relative_url }}'>
+                <img class="main-image" src='{{ "/photos/YHNYE_5.jpg" | relative_url }}'>
               </div>
               <div class="swiper-slide">Slide 6</div>
               <div class="swiper-slide">Slide 7</div>
