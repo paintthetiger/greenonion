@@ -38,6 +38,12 @@
       .main-content {
         font-size: 1.8em;
       }
+      .light-bold-content {
+        margin-top: 80px;
+        font-size: 0.95em;
+        text-align: left;
+        display: block;
+      }
       .medium-bold-content {
         margin-top: 80px;
         font-size: 2.5em;
@@ -104,10 +110,6 @@
         align-items: center;
       }
 
-      .swiper-slide-active {
-        transform: scale(2.5);
-        margin-top: 50%;
-      }
     </style>
   </head>
 
@@ -140,7 +142,27 @@
           </div>
           <hr />
           <div class="main-block">
-              <span class="main-title">주인공을 소개합니다.</span>
+              <span class="main-title">주인공을 소개합니디</span>
+              <img class="main-image" src='{{ "/images/main-mid.jpg" | relative_url }}'>
+              <div style="display: flex;">
+                  <div>
+                      <img class="main-icon" src='{{ "/images/yh.jpg" | relative_url }}'>
+                      <div class="icon-container">
+                          <img class="main-icon" src='{{ "/images/icon_tmap.jpg" | relative_url }}'>
+                          <img class="main-icon" src='{{ "/images/icon_navermap.jpg" | relative_url }}'>
+                          <img class="main-icon" src='{{ "/images/icon_kakaomap.jpg" | relative_url }}'>
+                      </div>
+                  </div>
+                  <div>
+                      <img class="main-icon" src='{{ "/images/ye.jpg" | relative_url }}'>
+                      <div class="icon-container">
+                          <img class="main-icon" src='{{ "/images/icon_tmap.jpg" | relative_url }}'>
+                          <img class="main-icon" src='{{ "/images/icon_navermap.jpg" | relative_url }}'>
+                          <img class="main-icon" src='{{ "/images/icon_kakaomap.jpg" | relative_url }}'>
+                      </div>
+                  </div>
+              </div>
+
           </div>
           <hr />
           <div class="main-block">
@@ -156,12 +178,7 @@
           <div class="main-block">
               <span class="main-title" id="navigation">오시는길</span>
               <img class="main-image" src='{{ "/images/map.png" | relative_url }}'>
-              <span class="medium-bold-content">서울 마포구 마포대로 92 효성해링턴스퀘어 B동 7층</span>
-              <div class="icon-container">
-                <img class="main-icon" src='{{ "/images/icon_tmap.jpg" | relative_url }}'>
-                <img class="main-icon" src='{{ "/images/icon_navermap.jpg" | relative_url }}'>
-                <img class="main-icon" src='{{ "/images/icon_kakaomap.jpg" | relative_url }}'>
-              </div>
+              <span class="light-bold-content">서울 마포구 마포대로 92 효성해링턴스퀘어 B동 7층</span>
           </div>
           <hr />
           <div class="main-block">
@@ -179,10 +196,10 @@
               <div class="swiper-slide">
                 <img class="main-image" src='{{ "/photos/YHNYE_3.jpeg" | relative_url }}'>
               </div>
-              <div class="swiper-slide" style="transform: scale(1); margin-top: 0;">
+              <div class="swiper-slide">
                 <img class="main-image" src='{{ "/photos/YHNYE_4.jpeg" | relative_url }}'>
               </div>
-              <div class="swiper-slide" style="transform: scale(1); margin-top: 0;">                 
+              <div class="swiper-slide">                 
                 <img class="main-image" src='{{ "/photos/YHNYE_5.jpeg" | relative_url }}'>
               </div>
               <div class="swiper-slide">Slide 6</div>
