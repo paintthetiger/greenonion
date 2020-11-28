@@ -179,10 +179,10 @@
               <div class="swiper-slide">
                 <img class="main-image" src='{{ "/photos/YHNYE_3.jpeg" | relative_url }}'>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="transform: scale(1); margin-top: 0;">
                 <img class="main-image" src='{{ "/photos/YHNYE_4.jpeg" | relative_url }}'>
               </div>
-              <div class="swiper-slide">                 
+              <div class="swiper-slide" style="transform: scale(1); margin-top: 0;">                 
                 <img class="main-image" src='{{ "/photos/YHNYE_5.jpeg" | relative_url }}'>
               </div>
               <div class="swiper-slide">Slide 6</div>
@@ -205,7 +205,7 @@
       var swiper = new Swiper('.swiper-container', {
         pagination: {
           el: '.swiper-pagination',
-          type: 'progressbar',
+          clickable: true,
         },
         navigation: {
           nextEl: '.swiper-button-next',
