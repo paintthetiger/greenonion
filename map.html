@@ -2,29 +2,91 @@
 ---
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    .main-container {
-      width: 90%;
-    }
-    .main-button {
-      width: 40%;
-      background: #52976b;
-    }
-    .main-image {
-      margin: 0 auto;
-      width: 90%;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="[김용호 그리고 최예은 - 결혼 예배]"/>
+    <meta property="og:description" content="2021.01.16, 03:30 PM"/>
+    <style>
+      @font-face {
+        font-family: "nanum";
+        src: url("../font/NanumSquare_acR_0.ttf");
+      }
+      p {
+        font-family: "nanum";
+      }
+      span {
+        font-family: "nanum";
+      }
+      .main-container {
+        margin: 0 auto;
+        width: 90%;
+      }
+      .main-block {
+        margin: 100px auto;
+      }
+      .main-image {
+        width: 100%;
+      }
+      .main-title {
+        font-size: 4em;
+        margin-bottom: 60px;
+        display: block;
+      }
+      .light-bold-content {
+        margin-top: 40px;
+        font-size: 2.3em;
+        text-align: left;
+        display: block;
+      }
+      .medium-bold-content {
+        margin-top: 80px;
+        font-size: 2.5em;
+        text-align: left;
+        display: block;
+      }
+      .footer {
+        color: #99806C;
+        font-size: 1.5em;
+        font-family: "nanum";
+        display: block;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="main-container">
-    <div>
-      <h1>요기는 오시는길 페이지</h1>
-    </div>
-  </div>
-
-    
-</body>
+  <body>
+    <div class="main-container">
+          <div class="main-block">
+              <span class="main-title" id="navigation">오시는길</span>
+              <img class="main-image" src='{{ "/images/map.jpg" | relative_url }}'>
+              <span class="medium-bold-content">주소</span>
+              <span class="light-bold-content">서울 마포구 마포대로 92 효성해링턴스퀘어 B동 7층</span>
+              <span class="medium-bold-content">버스</span>
+              <p class="light-bold-content">
+                  Blue 간선 / 160, 260, 600 <br />
+                  Green 지선 / 7013A, 7013B, 7611 <br />
+                  마을버스 / 마포01, 마포02, 마포10 <br />
+                  일반버스 / 1002 <br />
+                  공항버스 / 6015, 6021 <br />
+              </p>
+              <span class="medium-bold-content">지하철</span>
+              <p class="light-bold-content">
+                  ■ 공덕역 10번 출구 (경의 중앙선, 공항철도) <br />
+                  - 방향으로 나와 유턴 후, 전방 우측 효성해링턴 스퀘어 B동 7층 (도보 30초) <br />
+                  ■ 공덕역 9번 출구 (경의 중앙선, 공항철도) <br />
+                  - 방향으로 나와 유턴 후, 길 건너 맞은편 효성해링턴 스퀘어 B동 7층 (도보 1분) <br />
+                  ■ 공덕역 8번 출구 (5호선, 6호선) <br />
+                  - 방향으로 나와 좌측으로 90미터 직진 후, 길 건너 전방 우측 효성해링턴 스퀘어 B동 7층 (도보 3분) <br />
+                  ■ 공덕역 7번 출구 (5호선, 6호선) <br />
+                  - 방향으로 나와 우측 ‘웰츠 타워’ 통로 직진 후 보이는 건물 효성해링턴 스퀘어 7층 (도보 2분) <br />
+              </p>
+          </div>
+          <hr />
+        <div class="main-block">
+          <div style="text-align:right;">
+            <span class="footer">Designed by yenjoy_life</span>
+            <span class="footer">COPYRIGHT ©2020-2021 ALL RIGHTS RESERVED</span>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>

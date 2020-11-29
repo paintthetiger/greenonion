@@ -2,29 +2,209 @@
 ---
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    .main-container {
-      width: 90%;
-    }
-    .main-button {
-      width: 40%;
-      background: #52976b;
-    }
-    .main-image {
-      margin: 0 auto;
-      width: 90%;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="[김용호 그리고 최예은 - 결혼 예배]"/>
+    <meta property="og:description" content="2021.01.16, 03:30 PM"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-<body>
-  <div class="main-container">
-    <div>
-      <h1>요기는 포토갤러리쓰</h1>
-    </div>
-  </div>
+    <style>
+      @font-face {
+        font-family: "nanum";
+        src: url("../font/NanumSquare_acR_0.ttf");
+      }
+      p {
+        font-family: "nanum";
+      }
+      span {
+        font-family: "nanum";
+      }
+      .main-container {
+        margin: 0 auto;
+        width: 90%;
+      }
+      .main-block {
+        margin: 100px auto;
+      }
+      .main-title {
+        font-size: 4em;
+        margin-bottom: 60px;
+        display: block;
+      }
+      .gallery-image {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 50px;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 90%;
 
-    
-</body>
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .footer {
+        color: #99806C;
+        font-size: 1.5em;
+        font-family: "nanum";
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+          <div class="main-block">
+              <span class="main-title" id="gallery">포토갤러리</span>           
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_1.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_2.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_3.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_4.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">                 
+                <img class="gallery-image" src='{{ "/photos/YHNYE_5.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_6.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_25.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_8.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_9.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_10.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_11.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_12.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_13.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_14.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">                 
+                <img class="gallery-image" src='{{ "/photos/YHNYE_15.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_16.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_17.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_18.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_19.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_20.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_21.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_22.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_23.jpg" | relative_url }}'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='{{ "/photos/YHNYE_24.jpg" | relative_url }}'>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <hr />
+
+        <div class="main-block">
+          <div style="text-align:right;">
+            <span class="footer">Designed by yenjoy_life</span>
+            <span class="footer">COPYRIGHT ©2020-2021 ALL RIGHTS RESERVED</span>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+ 
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];                                          
+
+      // When the user clicks on the button, open the modal 
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+  </body>
 </html>
