@@ -72,6 +72,20 @@
         color: #FFFFFF;
         text-decoration: none;
       }
+      .account-button {
+        font-family: "nanum";
+        margin: 20px auto;
+        width: 20%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: transparent;
+        font-size: 3.5em;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
       .icon-container {
         margin-top: 60px;
         display: flex;
@@ -101,6 +115,11 @@
       .gallery-image {
         width: 100%;
         margin-bottom: 50px;
+      }
+      .account-container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
       }
       .swiper-container {
         width: 100%;
@@ -208,15 +227,15 @@
       <hr />
       <div class="main-block">
         <span class="main-title">신랑 신부에게 마음 전하기</span>
-        <div style="display: flex">
-          <span class="light-bold-content">• 신랑 김용호: 신한 110-165-983621</span>
-          <a class="main-button" href="https://qr.kakaopay.com/281006011140109321005753">
+        <div class="account-container">
+          <span class="light-bold-content" style="margin-top: 0;">• 신랑 김용호: 신한 110-165-983621</span>
+          <a class="account-button" href="https://qr.kakaopay.com/281006011140109321005753">
             <img class="main-icon" src='{{ "/images/icon_kakaomap.jpg" | relative_url }}'>
           </a>
         </div>
-        <div style="display: flex">
-          <span class="light-bold-content">• 신부 최예은: 신한 110-484-193716</span>
-          <a class="main-button" href="https://qr.kakaopay.com/281006011118655380003389">
+        <div class="account-container">
+          <span class="light-bold-content" style="margin-top: 0;">• 신부 최예은: 신한 110-484-193716</span>
+          <a class="account-button" href="https://qr.kakaopay.com/281006011118655380003389">
             <img class="main-icon" src='{{ "/images/icon_kakaomap.jpg" | relative_url }}'>
           </a>
         </div>
