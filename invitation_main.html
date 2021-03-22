@@ -1,0 +1,385 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+      @font-face {
+        font-family: "nanum";
+        src: url("../font/NanumSquare_acR_0.ttf");
+      }
+      p {
+        font-family: "nanum";
+      }
+      span {
+        font-family: "nanum";
+      }
+      .bg-brown {
+        background: #99806C;
+      }
+      .main-container {
+        margin: 0 auto;
+        width: 90%;
+      }
+      .main-block {
+        margin: 100px auto;
+      }
+      .main-image {
+        width: 100%;
+      }
+      .main-title {
+        font-size: 4em;
+        margin-bottom: 60px;
+        display: block;
+      }
+      .main-content {
+        font-size: 1.8em;
+        text-align: left;
+      }
+      .light-bold-content {
+        margin-top: 40px;
+        font-size: 2em;
+        text-align: left;
+        display: block;
+      }
+      .medium-bold-content {
+        margin-top: 80px;
+        font-size: 3em;
+        text-align: left;
+        display: block;
+      }
+      .bold-content {
+        font-size: 3.5em;
+        text-align: left;
+        display: block;
+        color: #99806C;
+      }
+      .main-button {
+        font-family: "nanum";
+        margin: 20px auto;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: transparent;
+        font-size: 3.5em;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      .icon-container {
+        margin-top: 60px;
+        display: flex;
+      }
+      .main-icon {
+        width: 80%;
+        border-radius: 30px;
+        margin: 0 auto;
+      }
+      .profile {
+        width: 100%;
+      }
+      .profile-container {
+        margin: 12px;
+      }
+      .name {
+        margin-top: 40px;
+        font-size: 3.5em;
+        text-align: center;
+        display: block;
+        color: #DF9A99
+      }
+      .maker {
+        font-size: 3em;
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+      }
+      .brown {
+        color: #99806C;
+      }
+      .gallery-image {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 50px;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 90%;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .footer {
+        color: #99806C;
+        font-size: 1.5em;
+        font-family: "nanum";
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="main-block">
+          <img class="main-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/main-mid-2.jpg'>
+      </div>
+      <hr />
+      <div class="main-block">
+          <div class="text-container">
+            <span class="main-title">INVITATION</span>
+            <p class="main-content">
+              쉬운 길이 아닌 가치 있는 길로,<br />
+              최고의 결과보다는 최선의 노력으로,<br />
+              세상의 기준이 아닌 하나님의 기쁨으로,<br />
+              <br />
+              내가 아닌 우리로 빛나는 날들을<br />
+              만들어 가겠습니다.<br />
+              둘이서 내딛는 첫걸음에 함께해주신다면<br />
+              큰 기쁨이겠습니다.<br />
+            </p>
+            <img class="main-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/we.png'>
+            <span class="bold-content">2021년 4월 3일 토요일 오후 6:30</span>
+            <span class="bold-content">아펠가모 공덕 마리에홀</span>
+          </div>
+      </div>
+      <hr />
+      <div class="main-block">
+          <span class="main-title">INTRO</span>
+          <img class="main-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/intro.jpg'>
+      </div>
+      <hr />
+      <div class="main-block">
+          <div class="text-container">
+            <span class="main-title">참석 여부</span>
+            <p class="light-bold-content">
+              코로나19 예방을 위한 방역 작업을 위해 <br />
+              참석 인원을 미리 파악하고 있습니다. <br />
+              아래 버튼을 눌러서 참석 여부를 체크해주시면 <br />
+              감사하겠습니다.
+            </p>
+            <a class="main-button bg-brown" href="https://forms.gle/MuBHj4ESPfW4NCuj9">참석 여부 표시하기</a>
+          </div>
+      </div>
+      <hr />
+      <div class="main-block">
+          <span class="main-title">신랑・신부에게 연락하기</span>
+          <div style="display: flex; margin-top: 60px;">
+              <div class="profile-container">
+                  <img class="profile" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/yh.jpg'>
+                  <span class="name">신랑 김용호</span>
+                  <span class="maker">혼주에게 연락하기</span>
+                  <div class="icon-container">
+                    <span class="maker">아버지 김복수</span>
+                    <a class="main-button" href="tel:01053818111">
+                      <img class="main-icon" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/icon_tel.jpg'>
+                    </a>
+                    <a class="main-button" href="sms:01053818111">
+                      <img class="main-icon" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/icon_sms.jpg'>
+                    </a>
+                  </div>
+              </div>
+              <div class="profile-container">
+                  <img class="profile" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/ye.jpg'>
+                  <span class="name">신부 최예은</span>
+                  <span class="maker">혼주에게 연락하기</span>
+                  <div class="icon-container">
+                    <span class="maker">아버지 최정철</span>
+                      <a class="main-button" href="tel:01047101097">
+                          <img class="main-icon" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/icon_tel.jpg'>
+                        </a>
+                        <a class="main-button" href="sms:01047101097">
+                          <img class="main-icon" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/icon_sms.jpg'>
+                        </a>
+                  </div>
+                  <div class="icon-container" style="margin-top: 0;">
+                    <span class="maker">어머니 공지연</span>
+                        <a class="main-button" href="tel:01022176613">
+                            <img class="main-icon" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/icon_tel.jpg'>
+                        </a>
+                        <a class="main-button" href="sms:01022176613">
+                            <img class="main-icon" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/icon_sms.jpg'>
+                        </a>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <hr />
+      <div class="main-block">
+          <span class="main-title" id="gallery">사진 보기</span>       
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_1.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_2.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_3.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_4.jpg'>
+              </div>
+              <div class="swiper-slide">                 
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_5.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_6.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_7.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_8.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_9.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_10.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_11.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_12.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_13.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_14.jpg'>
+              </div>
+              <div class="swiper-slide">                 
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_15.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_16.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_17.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_18.jpg'>
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/photos/YHNYE_19.jpg'>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <p class="medium-bold-content brown" style="margin-top: 40px;">
+              사진을 더 보시려면 옆으로 넘겨주세요!
+          </p>    
+        <hr />
+      </div>
+      <div class="main-block">
+          <span class="main-title" id="navigation">오시는 길</span>
+          <img class="main-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/map.jpg'>
+          <span class="medium-bold-content">주소</span>
+          <span class="light-bold-content">서울 마포구 마포대로 92 효성해링턴스퀘어 B동 7층</span>
+          <span class="medium-bold-content">버스</span>
+          <p class="light-bold-content">
+              Blue 간선 / 160, 260, 600 <br />
+              Green 지선 / 7013A, 7013B, 7611 <br />
+              마을버스 / 마포01, 마포02, 마포10 <br />
+              일반버스 / 1002 <br />
+              공항버스 / 6015, 6021 <br />
+          </p>
+          <span class="medium-bold-content">지하철</span>
+          <p class="light-bold-content">
+              ■ 공덕역 10번 출구 (경의 중앙선, 공항철도) <br />
+              - 방향으로 나와 유턴 후, 전방 우측 효성해링턴 스퀘어 B동 7층 (도보 30초) <br />
+              ■ 공덕역 9번 출구 (경의 중앙선, 공항철도) <br />
+              - 방향으로 나와 유턴 후, 길 건너 맞은편 효성해링턴 스퀘어 B동 7층 (도보 1분) <br />
+              ■ 공덕역 8번 출구 (5호선, 6호선) <br />
+              - 방향으로 나와 좌측으로 90미터 직진 후, 길 건너 전방 우측 효성해링턴 스퀘어 B동 7층 (도보 3분) <br />
+              ■ 공덕역 7번 출구 (5호선, 6호선) <br />
+              - 방향으로 나와 우측 ‘웰츠 타워’ 통로 직진 후 보이는 건물 효성해링턴 스퀘어 7층 (도보 2분) <br />
+          </p>
+      </div>
+      <hr />
+      <div class="main-block">
+        <img class="main-image" src='https://cdn.jsdelivr.net/gh/paintthetiger/greenonion/images/outro.jpg'>
+      </div>
+      <hr />
+
+      <div class="main-block">
+        <div style="text-align:right;">
+          <span class="footer">Designed by yenjoy_life</span>
+          <span class="footer">COPYRIGHT ©2020-2021 ALL RIGHTS RESERVED</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+ 
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];                                          
+
+      // When the user clicks on the button, open the modal 
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+  </body>
+</html>
